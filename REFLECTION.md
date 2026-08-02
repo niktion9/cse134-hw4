@@ -1,0 +1,7 @@
+# Reflection
+
+Building this site made it clear how repetitive multi-page websites become without reusable components. Every page required the same header, navigation, footer, stylesheet links, metadata, and overall HTML structure. I had to manually copy this shared skeleton into every HTML file and then adjust the relative paths depending on whether the page was in the root directory or inside the guide folder. Even a small change, such as adding a navigation link or updating the header, required editing every page individually.
+
+The biggest issue I encountered was moving between the root directory and the guide directory. Relative paths for stylesheets, images, and navigation links had to change from `styles/...` to `../styles/...` and from `images/...` to `../images/...`. Whenever I accidentally used the wrong path, images or styles stopped loading until I corrected them. Testing locally with a web server also helped catch issues that would not appear correctly when opening files directly.
+
+If I could automate one part of this project, I would want a tool that generates the repeated page structure automatically. The shared header, navigation, footer, stylesheet links, and metadata were identical across nearly every page. A template system or web components would allow these shared pieces to exist in one place while letting each page focus only on its unique content. That would reduce repetition, make updates much easier, and eliminate many opportunities for mistakes with copied code and relative paths.
