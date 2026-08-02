@@ -1,0 +1,32 @@
+/* About page: adapted from 02 Float. */
+
+main {
+    max-width: var(--measure);
+    margin-inline: auto;
+    padding: var(--space-3);
+}
+
+main figure {
+    float: left;
+    width: 11rem;
+    margin: 0 var(--space-2) var(--space-1) 0;
+    padding: var(--space-2);
+    border: var(--border);
+    background: var(--panel);
+}
+
+main figure img {
+    display: block;
+    width: 100%;
+}
+
+.member-bios {
+    clear: both;
+    padding-block-start: var(--space-2);
+}
+
+details {
+    margin-block: var(--space-2);
+    padding: var(--space-2);
+    border: var(--border);
+}

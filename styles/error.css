@@ -1,0 +1,27 @@
+/* 404 page: adapted from 05 Flex Centering. */
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100svh;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-3);
+    text-align: center;
+}
+
+main section {
+    max-width: var(--measure);
+}
+
+main img {
+    display: block;
+    width: min(100%, 18rem);
+    margin-inline: auto;
+    margin-block-end: var(--space-2);
+}

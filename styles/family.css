@@ -1,0 +1,56 @@
+/* Family pages: adapted from 08 Grid Page. */
+
+body {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "footer";
+    grid-template-rows: auto auto 1fr auto;
+    min-height: 100svh;
+
+    > header {
+        grid-area: header;
+    }
+
+    > nav {
+        grid-area: nav;
+    }
+
+    > main {
+        grid-area: main;
+        padding: var(--space-3);
+    }
+
+    > footer {
+        grid-area: footer;
+    }
+}
+
+main > article {
+    max-width: var(--measure);
+    margin-inline: auto;
+}
+
+main figure {
+    margin-block-end: var(--space-3);
+    padding: var(--space-2);
+    border: var(--border);
+    background: var(--panel);
+}
+
+main figure img {
+    display: block;
+    width: min(100%, 24rem);
+    margin-inline: auto;
+}
+
+.family-navigation {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--space-2);
+    margin-block-start: var(--space-3);
+    padding-block-start: var(--space-2);
+    border-block-start: var(--rule);
+}

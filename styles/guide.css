@@ -1,0 +1,63 @@
+main {
+    padding: var(--space-3);
+}
+
+main > article {
+    max-width: var(--measure);
+    margin-inline: auto;
+    padding: var(--space-2) var(--space-3);
+    border-inline-start: var(--rule);
+    background: var(--panel);
+}
+
+main > article > header {
+    padding: 0;
+    border: 0;
+    background: transparent;
+}
+
+section {
+    margin-block-start: var(--space-3);
+}
+
+section article {
+    margin-block-start: var(--space-2);
+    padding: var(--space-2);
+    border: var(--border);
+    background: var(--paper);
+}
+
+section article img {
+    display: block;
+    width: 10rem;
+    margin-block: var(--space-2);
+}
+
+blockquote {
+    margin-inline: 0;
+    padding-inline-start: var(--space-2);
+    border-inline-start: var(--rule);
+}
+
+fieldset {
+    margin-block-end: var(--space-2);
+    border: var(--border);
+}
+
+fieldset label {
+    display: block;
+    margin-block: var(--space-1);
+}
+
+form > label,
+form > input,
+form > button {
+    display: block;
+}
+
+form > input {
+    width: 100%;
+    max-width: 24rem;
+    margin-block: var(--space-1) var(--space-2);
+    padding: var(--space-1);
+}

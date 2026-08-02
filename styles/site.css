@@ -1,0 +1,71 @@
+@layer site {
+    header,
+    nav,
+    footer {
+        padding: var(--space-2) var(--space-3);
+    }
+
+    header,
+    footer {
+        background: var(--panel);
+    }
+
+    header {
+        border-block-end: var(--border);
+    }
+
+    header p {
+        font-weight: bold;
+        margin: 0;
+    }
+
+    footer {
+        border-block-start: var(--border);
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    nav a {
+        text-decoration: none;
+    }
+
+    nav li {
+        margin-block: var(--space-1);
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    header img {
+        width: 3rem;
+    }
+}
+@media (prefers-reduced-motion: no-preference){
+    @view-transition{
+        navigation: auto;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .fresh-cheese-image {
+        view-transition-name: fresh-cheese;
+    }
+
+    .soft-cheese-image {
+        view-transition-name: soft-cheese;
+    }
+
+    .blue-cheese-image {
+        view-transition-name: blue-cheese;
+    }
+
+    .hard-cheese-image {
+        view-transition-name: hard-cheese;
+    }
+}

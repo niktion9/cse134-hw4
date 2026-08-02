@@ -1,0 +1,54 @@
+/* Join page: adapted from 06 Flex Page and 05 Flex Centering. */
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100svh;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-3);
+}
+
+.membership-card {
+    width: min(100%, 34rem);
+    padding: var(--space-3);
+    border: var(--border);
+    background: var(--panel);
+}
+
+form {
+    margin-block-start: var(--space-2);
+}
+
+form > label,
+form > input,
+form > select,
+form > button {
+    display: block;
+    width: 100%;
+}
+
+form > input,
+form > select {
+    margin-block: var(--space-1) var(--space-2);
+    padding: var(--space-1);
+}
+
+fieldset {
+    margin-block: var(--space-2);
+}
+
+fieldset label {
+    display: block;
+    margin-block: var(--space-1);
+}
+
+dialog {
+    max-width: 32rem;
+    border: var(--border);
+}
