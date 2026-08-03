@@ -1,0 +1,57 @@
+/* Botanical Field Journal */
+
+body.nature-mode {
+  --paper: #f8f5eb;
+  --panel: #efe9d7;
+  --ink: #32422d;
+  --accent: #6b8f5b;
+
+  background: #f8f5eb;
+  color: #32422d;
+}
+
+body.nature-mode {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+body.nature-mode header,
+body.nature-mode nav,
+body.nature-mode aside,
+body.nature-mode footer {
+  background: #efe9d7;
+}
+
+body.nature-mode h1,
+body.nature-mode h2 {
+  color: #46633f;
+  letter-spacing: 0.03em;
+}
+
+body.nature-mode button {
+  background: #6b8f5b;
+  color: white;
+  border: none;
+  padding: 0.75rem 1rem;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+body.nature-mode button:hover {
+  background: #557347;
+}
+
+body.nature-mode img {
+  border-radius: 12px;
+  border: 2px solid #a89c7b;
+  box-shadow: 0 8px 20px rgb(0 0 0 / 10%);
+}
+
+body.nature-mode main {
+  background:
+    linear-gradient(rgb(255 255 255 / 25%), rgb(255 255 255 / 25%)),
+    repeating-linear-gradient(
+      transparent,
+      transparent 31px,
+      rgb(80 100 70 / 8%) 32px
+    );
+}
